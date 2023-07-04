@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumen</title>
+</head>
+<body>
+    <h1>RESUMEN HTML</h1>
+    <br/>
+
+            <p>A continuación, un breve Resumen de HTML y sus funciones; Se divide en "header""section""footer"</p>
+            <p>Dentro de Section se puede abrir una etiqueta de "article" para diferenciar</p> <!--Se podría optimizar este codigo con article-->
+        <h2>Menu</h2>
+    <br/>
+
+            <p>Para crear un menu utilizamos la etiqueta "a" seguida de "href", para abrir en una pagina nueva "target="_blank""</p>
+                <a target="_blank" href="index.html">Home</a>
+                <a target="_blank" href="contacto.html">Contacto</a>
+    <br/>
+
+    <h2>Listas</h2>
+        <ol>
+            <p>Para listar elementos utilizamos la etiqueta "ol": para enumerar, y "ul" para no listar. Seguido de las subetiquetas "li"</p>
+                <li>Lista</li>
+                <li>Lista 2</li>
+        </ol>
+        <ul>
+                <li>Lista</li>
+                <li>Lista 2</li>
+        </ul>
+    <br/>
+
+    <h2>Imagenes</h2>
+            <p>Para insertar Imagenes se utiliza la etiqueta "img" seguido de sus atributos; que pueden ser: "width" para la anchura, "alt" para el nombre de la imagen y "src" para la ruta de la imagen</p>
+                <img width="150px" alt="Caballo" src="img/horse.jpg"/>
+    <br/>
+
+    <h2>Tablas</h2>
+            <p>Para crear tablas utilizamos la etiqueta "table" que puede estar seguida de sus atributos, ej: "Border"</p>
+            <p>Las etiquetas utilizadas son "tr" Filas y "td" Columnas</p>
+                <table border="1px">
+                    <tr>
+                        <td>Filas</td>
+                        <td>Columnas</td>
+                        <td>Columnas</td>
+                    </tr>
+                    <tr>
+                        <td>Filas</td>
+                        <td>Columnas</td>
+                        <td>Columnas</td>
+                    </tr>
+                </table>
+    <br/>
+
+    <h2>Formularios</h2>
+            <p>Para crear formularios utilizamos la etiqueta "form" seguida de la propiedad "action" para indicar la ruta, y el "method"</p>
+            <p>Las Subetiquetas que utilizaremos son; "label" el nombre que está al lado del formulario "input" seguido de "type"</p>
+            <p>Seguido de label podemos añadir un "for" para identificar y que cuando se seleccione el texto vaya al recuadro</p>
+            <p>Después, en input añadimos el "id" que habiamos identificado en for</p>
+                <form action="/formulario" method="POST">
+                    <label for="nombre">Nombre</label>
+                    <input id="nombre" name="nombre" type="text"/>
+            <p>Para poner el nombre dentro del formulario utilizamos "placeholder"</p>  
+                    <input id="nombre" name="nombre" type="text" placeholder="Nombre"/>
+            <p>Para desplegar un menu utilizamos "select" y para las opciones "option"</p>
+                    <select>
+                        <option>Opcion1</option>
+                        <option>Opcion2</option>
+                    </select>
+            <p>Otras maneras de formularios</p>
+                <ol>
+                    <li>Marcar casilla</li> <input type="radio"/>
+                    <li>Marcar casilla 2</li> <input type="checkbox"/>
+                    <li>Subir fichero</li> <input type="file"/>
+                </ol>
+                    <input type="submit" value="Enviar"/> <!-- Esto es un boton -->
+                    
+                </form>
+    
+    <h2>Etiqueta SPAM</h2>
+            <p>La etiqueta "spam" sirve para referenciar un texto </p>
+            <p>Esto es un ejemplo para <spam style="color: blue;">SPAM</spam>, introduzca texto Lorem ipsum dolor sit amet consectetur adipisicing elit.<br/>
+               Reiciendis voluptatem unde voluptate consequatur explicabo nisi similique quam aperiam laudantium dolorem maiores <br/>
+               iusto aliquam rem assumenda temporibus adipisci, non distinctio amet?</p>
+
+</body>
+</html>
