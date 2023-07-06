@@ -4,47 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <header>
-        <h1>Resumen HTML</h1>
-
-        <a href="#formulario">Formularios</a> <!--id="formulario"-->
-        <a href="#table">Tablas</a> <!--id="table"-->
-        <a href="#img">Imagenes</a> <!--id="img"-->
-        <a href="#etiq">Etiqueta SPAM</a> <!--id="etiq"-->
-        <a href="#lista">Listas</a> <!--id="lista"-->
-        <a href="#menu">Menu</a> <!--id="menu"-->
-
+        <h1 id="cabecera">RESUMEN HTML</h1>
+        <section>
+            <a class="menu" href="#formulario">Formularios</a> <!--id="formulario"-->
+            <a class="menu" href="#table">Tablas</a> <!--id="table"-->
+            <a class="menu" href="#img">Imagenes</a> <!--id="img"-->
+            <a class="menu" href="#etiq">Etiqueta SPAM</a> <!--id="etiq"-->
+            <a class="menu" href="#lista">Listas</a> <!--id="lista"-->
+            <a class="menu" href="#menu">Menu</a> <!--id="menu"-->
+        </section>
+        
     </header>
-    <section>
+    <section class="container">
         <article class="post">
             <h2 id="formulario">Formularios</h2>
-                <p>Para crear formularios utilizamos la etiqueta "form" seguida de la propiedad "action" para indicar la ruta, y el "method"<br/>
-                    Las Subetiquetas que utilizaremos son; "label" el nombre que está al lado del formulario "input" seguido de "type"<br/>
-                    Seguido de label podemos añadir un "for" para identificar y que cuando se seleccione el texto vaya al recuadro <br/>
+                <p>Para crear formularios utilizamos la etiqueta "form" seguida de la propiedad "action" para indicar la ruta, y el "method"
+                    Las Subetiquetas que utilizaremos son; "label" el nombre que está al lado del formulario "input" seguido de "type"
+                    Seguido de label podemos añadir un "for" para identificar y que cuando se seleccione el texto vaya al recuadro 
                     Después, en input añadimos el "id" que habiamos identificado en for</p>
 
-                    <form action="/formulario" method="PATH">
-                        <label for="nombre">Nombre</label>
-                        <input id="nombre" name="nombre" type="text" />
-        
-                    </form>
+                    <section class="center">
+                        <form action="/formulario" method="PATH">
+                            <label for="nombre">Nombre</label>
+                            <input id="nombre" name="nombre" type="text" />
+                        </form>
+                    </section>
                 <p>Para poner el nombre dentro del formulario utilizamos "placeholder" dentro del input<br/>
 
-                    <form action="/formulario" method="PATH">
-                        <label for="nombre2">Nombre</label>
-                        <input id="nombre2" name="nombre" type="text" placeholder="Nombre" />
-
+                    <section class="center">
+                        <form action="/formulario" method="PATH">
+                            <label for="nombre2">Nombre</label>
+                            <input id="nombre2" name="nombre" type="text" placeholder="Nombre" />
+                    </section>
                 <p>Para desplegar un menu utilizamos la etiqueta "Select" y para las opciones la Subetiqueta "option"</p>
-                    <form>
-                        <select>
-                            <option>Opcion1</option>
-                            <option>Opcion2</option>
-                            <option>Opcion3</option>
-                        </select>
-                    </form>
-
+                    <section class="center">
+                        <form>
+                            <select>
+                                <option>Opcion1</option>
+                                <option>Opcion2</option>
+                                <option>Opcion3</option>
+                            </select>
+                        </form>
+                    </section>
+                
                 <p>Otras maneras para formularios</p> 
                     <ol>
                         <li>Marcar casilla circular: "input type=radio"</li>
@@ -61,17 +70,19 @@
                             </form>
                     </ol>
                 <p>Botones: tenemos dos opciones: "input type=submit" y "button type=""" estos botones deben estar dentro de "form"</p>
-                    <form>
-                        <input type="submit">
-                        <button type="submit">Enviar</button>
-                    </form>    
-                            
+                    <section class="center">
+                        <form>
+                            <input type="submit">
+                            <button type="submit">Enviar</button>
+                        </form>    
+                    </section>        
         </article>               
         <article class="post">
             <h2 id="table">Tablas</h2>
-            <p>Para crear tablas utilizamos la etiqueta "table", la cual puede estar seguida de sus atributos, ej: "border"<br/>
+            <p>Para crear tablas utilizamos la etiqueta "table", la cual puede estar seguida de sus atributos, ej: "border"
             Las Subetiquetas son: "tr" para las filas y "td" para las columnas</p>
-                <table border="1px">
+            
+                <table>
                     <tr>
                         <td>Fila</td><td>Columna</td><td>Columnas</td>
                     
@@ -81,18 +92,22 @@
                     
                     </tr>
                 </table>
+            
         </article>
         <article class="post">
             <h2 id="img">Imagenes</h2>
-                <p>Para insertar Imagenes se utiliza la etiqueta "img" seguido de sus atributos; que pueden ser: "width" para la anchura,<br/>
+                <p>Para insertar Imagenes se utiliza la etiqueta "img" seguido de sus atributos; que pueden ser: "width" para la anchura,
                      "alt" para el nombre de la imagen y "src" para la ruta de la imagen</p>
-                    <img width="150px" alt="Caballo" src="img/horse.jpg"/>
+                     <section class="center">
+                        <img width="150px" alt="Caballo" src="img/horse.jpg"/>
+                    </section>
+                    
 
         </article>
         <article class="post">
             <h2 id="etiq">Etiqueta SPAM</h2>
-                <p>La etiqueta SPAM sirve para referenciar un texto, es distinto a los enlaces tipo "a"<br/>
-                    Ejemplo: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error incidunt <spam style="color: blue;">beatae</spam> delectus ad inventore obcaecati.<br/>
+                <p>La etiqueta SPAM sirve para referenciar un texto, es distinto a los enlaces tipo "a"
+                    Ejemplo: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error incidunt <spam>beatae</spam> delectus ad inventore obcaecati.
                     Consequuntur consequatur ducimus, aliquid dolorum, similique, deleniti non voluptatibus sunt esse natus recusandae ab pariatur.
 
                 </p>
@@ -114,12 +129,15 @@
         <article class="post">
             <h2 id="menu">Menu</h2>
                 <p>Para crear un menu utilizaremos la etiqueta "a" seguida de "href", si queremos abrir el enlace en una pagina nueva utilizaremos "target=_bank"</p>
-                    <a target="_blank" href="Resumen.html">Resumen</a>
-                    <a target="_blank" href="contacto.html">Contacto</a>
+                    <section class="center">
+                        <a class="menu" target="_blank" href="Resumen.html">Resumen</a>
+                        <a class="menu" target="_blank" href="contacto.html">Contacto</a>
+                    </section>  
+                
         </article>
     </section>
     <footer>
-        <p>Copy Right 2023</p>
+        <p>Copy Right 2022</p>
     </footer>
 </body>
 </html>
